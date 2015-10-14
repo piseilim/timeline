@@ -1,0 +1,94 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// timeline/index page
+#timeline {
+  .panel-timeline {
+    margin-bottom: 10px;
+    img {
+      border: 1px solid #E4E4E4;
+    }
+    .img-responsive {
+      @include vendor-prefix(box-shadow, 0px 1px 1px rgba(0, 0, 0, 0.05));
+    }
+    .panel-body {
+      position: relative;
+      padding: 12px 12px 0px;
+    }
+    .media-title-container {
+      margin-bottom: 11px;
+    }
+    .media-body {
+      color: $gray;
+      .media-title {
+        padding-right: 20px;
+      }
+      .btn-dropdown {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+    }
+    // Like, Comment, and Share button
+    .action-list {
+      margin-top: 12px;
+      padding: 0px 0px 4px;
+      line-height: 22px;
+
+      a {
+        color: #7F7F7F;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 14px;
+        i {
+          font-size: 15px;
+          color: #afb4bd;
+        }
+      }
+      ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        @include flex-container;
+        li {
+          display: inline-block;
+          flex-grow: 1;
+          padding: 0 10px;
+          &.small-center {
+            text-align: center;
+          }
+          &.small-right {
+            text-align: right;
+          }
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        ul {
+          display: block;
+          padding-left: 0;
+          margin-bottom: 0;
+          li {
+            display: inline-block;
+            padding: 0 20px 0 0;
+          }
+        }
+      }
+    }
+    // Comment container is hidden until comment button is click
+    .comment-container {
+      display: none;
+      background-color: #F6F7F8;
+      .comment-box {
+        padding: 8px 15px;
+        .comment-img {
+          width: 32px;
+          height: 32px;
+        }
+        input {
+          border-radius: 0;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

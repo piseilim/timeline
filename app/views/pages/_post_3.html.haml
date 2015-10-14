@@ -1,0 +1,45 @@
+%section.panel.panel-default.panel-timeline
+  .panel-body
+    .media
+      .media-title-container.clearfix
+        .media-left
+          = link_to "#" do
+            = image_tag "users/user_3.jpg", class: "media-object", alt: ""
+        .media-body
+          .media-wrapper.clearfix
+            %span.media-title
+              %span
+                %strong= link_to "Sherri Morris", "#"
+              shared
+              %span= link_to "Purple Clover's", "#"
+              %span= link_to "photo.", "#"
+            = link_to "#", class: 'btn-dropdown' do
+              %i.glyphicon.glyphicon-chevron-down.lighter
+          .media-time-ago
+            %small
+              %time 12 hrs
+              &middot;
+              %i.glyphicon.glyphicon-user.lighter
+      %p This is true. This is very true.
+      = image_tag "posts/post_3.jpg", class: "img-responsive"
+      .action-list.clearfix
+        .border
+        %ul
+          %li.small-left
+            = link_to "#" do
+              %i.glyphicon.glyphicon-thumbs-up
+              Like
+          %li.small-center
+            = link_to "#", class: "comment" do
+              %i.glyphicon.glyphicon-comment
+              Comment
+          %li.small-right
+            = link_to "#" do
+              %i.glyphicon.glyphicon-share-alt
+              Share
+  .comment-container.clearfix
+    .border
+    .comment-box
+      .media-left= image_tag "users/user_0.jpg", class: "pull-left"
+      .media-body
+        %input.form-control.pull-left{:placeholder => "Write a comment...", :type => "email"}

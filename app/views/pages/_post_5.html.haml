@@ -1,0 +1,44 @@
+%section.panel.panel-default.panel-timeline
+  .panel-body
+    .media
+      .media-title-container.clearfix
+        .media-left
+          = link_to "#" do
+            = image_tag "users/user_5.jpg", class: "media-object", alt: ""
+        .media-body
+          .media-wrapper.clearfix
+            %span.media-title
+              %span
+                %strong= link_to "Moviepilot Celeb, "#"
+            = link_to "#", class: 'btn-dropdown' do
+              %i.glyphicon.glyphicon-chevron-down.lighter
+          .media-time-ago
+            %small
+              %time Oct 12
+              &middot;
+              %i.glyphicon.glyphicon-globe.lighter
+      %p
+        "I think people really wanted to see me fail." Stay strong,
+        = link_to "Selena Gomez!", "#"
+      = image_tag "posts/post_5.jpg", class: "img-responsive"
+      .action-list.clearfix
+        .border
+        %ul
+          %li.small-left
+            = link_to "#" do
+              %i.glyphicon.glyphicon-thumbs-up
+              Like
+          %li.small-center
+            = link_to "#", class: "comment" do
+              %i.glyphicon.glyphicon-comment
+              Comment
+          %li.small-right
+            = link_to "#" do
+              %i.glyphicon.glyphicon-share-alt
+              Share
+  .comment-container.clearfix
+    .border
+    .comment-box
+      .media-left= image_tag "users/user_0.jpg", class: "pull-left"
+      .media-body
+        %input.form-control.pull-left{:placeholder => "Write a comment...", :type => "email"}

@@ -13,6 +13,8 @@
  *= require_self
  */
  @import "bootstrap-sprockets";
- @import "bootstrap_overrides";
- @import "mixins_and_variables";
+ @import "mixins";
+ @import "variables";
+// Import last
  @import "bootstrap";
+ @import "base/*";

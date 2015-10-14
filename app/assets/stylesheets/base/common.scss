@@ -1,0 +1,21 @@
+.lighter {
+  color: lighten($gray, 20%);
+}
+.border {
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 4px;
+}
+.form-control:focus {
+  border-color: #CCC;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+  body {
+    font-size: 13px;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  body {
+    font-size: 14px;
+  }
+}
