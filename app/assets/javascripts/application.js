@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.lazyload
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require pages

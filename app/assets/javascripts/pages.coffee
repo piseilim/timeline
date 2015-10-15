@@ -6,3 +6,6 @@ jQuery ->
     e.preventDefault()
     $panel = $(this).parents('.panel-timeline')
     $panel.find('.comment-container').slideToggle 'slow'
+
+  $('img').lazyload
+    effect: 'fadeIn'
