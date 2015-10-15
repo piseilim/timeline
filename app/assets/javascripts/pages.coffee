@@ -8,4 +8,5 @@ jQuery ->
     $panel.find('.comment-container').slideToggle 'slow'
 
   $('img').lazyload
+    threshold: 0
     effect: 'fadeIn'
